@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spread_id: 
+  pick_id: 
+  win: false
+
+two:
+  spread_id: 
+  pick_id: 
+  win: false
