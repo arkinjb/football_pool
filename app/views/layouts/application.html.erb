@@ -7,6 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <h1>Football Pool 2015</h1>
+    <nav>
+
+        <%= link_to "Sign Out", root_url %>
+        <%= link_to "Sign In", root_url %>
+        <%= link_to "Sign Up", root_url %>
+    </nav>
+  </header>
 
 <%= yield %>
 
