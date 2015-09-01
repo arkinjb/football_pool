@@ -10,10 +10,14 @@
   <header>
     <h1>Football Pool 2015</h1>
     <nav>
-
-        <%= link_to "Sign Out", root_url %>
-        <%= link_to "Sign In", root_url %>
-        <%= link_to "Sign Up", root_url %>
+        <h3><%= link_to 'Leaderboard', records_path %></h3>
+      <% if current_user %>
+        <h3><%= link_to 'Spreads', spreads_path %></h3>
+        <h3><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></h3>
+      <% else %>
+        <h3><%= link_to 'Signup', new_user_registration_path %></h3>
+        <h3><%= link_to 'Login', new_user_session_path %></h3>
+      <% end %>
     </nav>
   </header>
 

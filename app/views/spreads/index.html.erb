@@ -1,0 +1,8 @@
+<h1>Point Spreads for Week </h1>
+<ul>
+  <% @spreads.each do |spread| %>
+    <li>
+      <%= spread.team %> - <%= spread.spread %>
+    </li>
+  <% end %>
+</ul>
